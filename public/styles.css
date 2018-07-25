@@ -4,5 +4,8 @@
   margin: 0 auto;
 }
 body{
-  background-color: red;
+  background-color: rgb(57, 57, 224);
+}
+nav{
+  background-color: blueviolet;
 }
