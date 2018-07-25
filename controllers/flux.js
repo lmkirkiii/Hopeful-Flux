@@ -50,7 +50,7 @@ module.exports = {
   },
 
   delete: (req, res) => {
-    Tweet.findOneAndRemove({ _id: req.params.id }).then(tweet => {
+    Flux.findOneAndRemove({ _id: req.params.id }).then(flux => {
       res.redirect('/')
     })
   }
