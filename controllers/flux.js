@@ -47,5 +47,11 @@ module.exports = {
     } else {
       res.redirect("/");
     }
+  },
+
+  delete: (req, res) => {
+    Tweet.findOneAndRemove({ _id: req.params.id }).then(tweet => {
+      res.redirect('/')
+    })
   }
 };
