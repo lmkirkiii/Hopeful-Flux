@@ -1,3 +1,14 @@
+.lard{
+  border-top: 3px dotted white;
+ border-right: 3px dotted white;
+ padding: 30px;
+ color: white;
+ padding-bottom: 10px;
+}
+.abt{
+  
+}
+
 
 body{
   background-color: rgb(57, 57, 224);
@@ -76,9 +87,6 @@ body{
 .container{
  animation: fadein 10s;
 }
-.card{
- border: 3px dotted white;
-}
 input{
  border: 3px dotted white;
  
@@ -87,7 +95,7 @@ input{
 form{
  border-top: 3px dotted white;
  border-right: 3px dotted white;
- padding: 30px
+ padding: 30px;
  color: white;
  padding-bottom: 10px;
 }
@@ -99,7 +107,7 @@ h4{
 
 @keyframes fadein {
  from { opacity: 0; }
- to   { opacity: 1; }
+ to   { opacity: 2; }
 }
 
 @keyframes rotate {
@@ -116,7 +124,7 @@ h4{
 
 @keyframes slide {
  0%   { font-size: 20px; left:0px; top:0px;}
- 25%  {font-size: 30px; yellow; left:200px; top:0px;}
+ 25%  {font-size: 30px;  left:200px; top:0px;}
  50%  {font-size: 40px; left:200px; top:200px;}
  75%  {font-size: 50px;  left:0px; top:200px;}
  75% {font-size: 60px;  left:0px; top:0px;}

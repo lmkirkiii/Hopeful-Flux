@@ -1,33 +1,42 @@
 
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Fluxus</title>
+    <link href="https://fonts.googleapis.com/css?family=Cutive+Mono|Raleway+Dots" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link rel="stylesheet" href="/styles.css">
+    
   </head>
   <body>
-    <header class="site-header">
-      <nav>
-        <div class="nav-wrapper">
-          <a href="/" class="brand-logo left">Fluxus</a>
-          <ul class="right">
-          {{#if currentUser}}
-            <li><a href="/flux/new">Flux</a></li>
-            <li><a href="/user/{{currentUser.id}}">Profile</a></li>
-            <li><a href="/user/logout">Log Out</a></li>
-          {{else}}
-            <li><a href="/user/login">Log In</a></li>
-            <li><a href="/user/sign-up">Sign Up</a></li>
-          {{/if}}
-          </ul>
-        </div>
-      </nav>
-    </header>
+    
+    <div id="bi">
+      <h1 id="log" class="fade"><a href='/'>Fluxus</a></h1>
+    </div>
+    <br>
     <main class="container">
       {{{ body }}}
     </main>
+            
+    {{#if currentUser}}
+            <ul class="foot">
+              <li class:"line"><a href="/flux/new">Flux</a></li>
+              <li class:"line"><a href="/user/{{currentUser.id}}">Profile</a></li>
+              <li class:"line"><a href="/user/logout">Log Out</a></li>
+            </ul>
+    {{else}}
+        <div class="container1">
+            <ul class="center">
+              <li><a id ="log" href="/user/login">Log In</a></li>
+              <li><a id = "sign" href="/user/sign-up">Sign Up</a></li>
+              <li><a id = "about" href="/user/about">About Fluxus</a></li>
+            </ul>
+         </div>
+     {{/if}}
   </body>
+  
 </html>
+
