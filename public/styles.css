@@ -1,11 +1,125 @@
-.nav-wrapper {
-  width: 90%;
-  max-width: 800px;
-  margin: 0 auto;
-}
+
 body{
   background-color: rgb(57, 57, 224);
+ 
 }
-nav{
-  background-color: blueviolet;
+
+
+#bi h1{
+ color: white;
+ text-align: center;
+ margin-top: 25px;
+ text-align: center;
+ position: relative;
+ -webkit-animation-name: slide; 
+ -webkit-animation-duration: 4s; 
+ animation-name: slide;
+ animation-duration: 4s;
+ font-size: 85px;
+ margin-left: 300px;
+ margin-right: 300px;
+ font-size: 85px;
+}
+
+.center{
+ position: relative;
+ -webkit-animation-name: rotate; 
+ -webkit-animation-duration: 4s; 
+ animation-name: rotate;
+ animation-duration: 7s;
+ border-top: 3px dotted white;
+ border-left: 3px dotted white;
+ border-right: 3px white;
+ display: block;
+ margin-left: 400px;
+ margin-right: 400px;
+ padding-bottom: 200px;
+ padding-top: 200px;
+}
+
+.foot{
+ 
+ display: flex;
+ justify-content: space-evenly;
+ flex-direction: row;
+ border-top: 3px dotted white;
+ padding: 50px;
+ position: fixed;
+ bottom: 0;
+ width: 100%;
+ font-size: 20px;
+}
+#log{
+
+ text-align: center;
+ color: white;
+ font-size: 20px;
+}
+#sign{
+
+ text-align: center;
+ color: white;
+ font-size: 20px;
+}
+.line{
+ display: flex;
+ justify-content: space-evenly;
+ flex-direction: row;
+ color: white;
+ font-size: 20px;
+}
+
+#better{
+ padding: 100px;
+}
+
+.container{
+ animation: fadein 10s;
+}
+.card{
+ border: 3px dotted white;
+}
+input{
+ border: 3px dotted white;
+ 
+}
+
+form{
+ border-top: 3px dotted white;
+ border-right: 3px dotted white;
+ padding: 30px
+ color: white;
+ padding-bottom: 10px;
+}
+h4{
+ color: white;
+ text-align: center;
+ font-size: 40px
+}
+
+@keyframes fadein {
+ from { opacity: 0; }
+ to   { opacity: 1; }
+}
+
+@keyframes rotate {
+ 0%   {opacity: 0; left:0px; top:0px;}
+ 25% {border-top: 3px dotted white; opacity: 0; left:200px; top:0px;}
+ 25%  {border-right:3px dotted white; opacity: .8; left:200px; top:0px;}
+ 25%  {border-right:3px dotted white; opacity: .0; left:200px; top:0px;}
+ 25%  {border-bottom:3px dotted white; opacity: .8; left:200px; top:0px;}
+ 25%  {border-bottom:3px dotted white; opacity: .0; left:200px; top:0px;}
+ 25%  {border-left:3px dotted white; opacity: .8; left:200px; top:0px;}
+ 50%  {opacity: .5;left:200px; top:150px;}
+ 75% {opacity: 1;left:0px; top:0px;} 
+}
+
+@keyframes slide {
+ 0%   { font-size: 20px; left:0px; top:0px;}
+ 25%  {font-size: 30px; yellow; left:200px; top:0px;}
+ 50%  {font-size: 40px; left:200px; top:200px;}
+ 75%  {font-size: 50px;  left:0px; top:200px;}
+ 75% {font-size: 60px;  left:0px; top:0px;}
+ 75% {font-size: 75px;  left:0px; top:0px;}
+ 100% {font-size: 85px;  left:0px; top:0px;}
 }
