@@ -1,7 +1,7 @@
 module.exports = {
 
-    index: (req, res) => {
-      console.log("works");
-    }
-
+  index: function(req, res) {
+    res.render('about/home', { name: req.params.name })
+  })
+  
 };
