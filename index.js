@@ -1,4 +1,4 @@
-
+// const router = require('./routes/index.js')
 const express = require("express");
 const hbs = require("hbs");
 const flash = require("connect-flash");
