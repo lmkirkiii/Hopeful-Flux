@@ -2,8 +2,7 @@ const express = require('express')
 const router = express.Router()
 const aboutController = require('../controllers/about.js')
 
-router.get('/about', aboutController.index);
-router.get('/:name', userController.show);
+router.get('/', aboutController.show);
 
 module.exports = router;
 

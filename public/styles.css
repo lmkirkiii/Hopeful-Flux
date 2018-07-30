@@ -1,6 +1,6 @@
 .lard{
-  border-top: 3px dotted white;
- border-right: 3px dotted white;
+  border-top: 2px dotted white;
+ border-right: 2px dotted white;
  padding: 30px;
  color: white;
  padding-bottom: 10px;
@@ -14,6 +14,7 @@ body{
   background-color: rgb(57, 57, 224);
  
 }
+
 
 
 #bi h1{
@@ -32,15 +33,16 @@ body{
  font-size: 85px;
 }
 
+
 .center{
  position: relative;
  -webkit-animation-name: rotate; 
  -webkit-animation-duration: 4s; 
  animation-name: rotate;
  animation-duration: 7s;
- border-top: 3px dotted white;
- border-left: 3px dotted white;
- border-right: 3px white;
+ border-top: 2px dotted white;
+ border-left: 2px dotted white;
+ border-right: 2px white;
  display: block;
  margin-left: 400px;
  margin-right: 400px;
@@ -53,24 +55,66 @@ body{
  display: flex;
  justify-content: space-evenly;
  flex-direction: row;
- border-top: 3px dotted white;
+ border-top: 2px dotted white;
  padding: 50px;
  position: fixed;
  bottom: 0;
  width: 100%;
  font-size: 20px;
 }
+#about1{
+  font-size: 40px;
+  color: white;
+}
 #log{
 
  text-align: center;
  color: white;
  font-size: 20px;
+ animation: log;
+ animation-duration: 7s;
 }
 #sign{
 
  text-align: center;
  color: white;
- font-size: 20px;
+ font-size: 25px;
+ animation: sign;
+ animation-duration: 7s;
+}
+.aboutContainer{
+  margin: 200px;
+}
+#mission{
+  font-size: 20px;
+  color: white;
+}
+#meaning{
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  animation: log;
+  animation-duration: 7s;
+}
+#developers{
+  text-align: center;
+  color: white;
+  font-size: 35px;
+  animation: sign;
+  animation-duration: 7s;
+
+}
+#prompter{
+  text-align: center;
+  animation: slide;
+  animation-duration: 4s;
+}
+#about{
+text-align: center;
+ color: white;
+ font-size: 35px;
+ animation: about;
+ animation-duration: 7s;
 }
 .line{
  display: flex;
@@ -88,20 +132,24 @@ body{
  animation: fadein 10s;
 }
 input{
- border: 3px dotted white;
+  border-bottom: 2px dotted;
  
 }
-
+#signup-btn{
+  background:none; 
+  border: 1px dotted white;
+}
+#login-btn{
+  background:none; 
+  border: 1px dotted white;
+}
 form{
- border-top: 3px dotted white;
- border-right: 3px dotted white;
  padding: 30px;
  color: white;
  padding-bottom: 10px;
 }
 h4{
  color: white;
- text-align: center;
  font-size: 40px
 }
 
@@ -112,12 +160,12 @@ h4{
 
 @keyframes rotate {
  0%   {opacity: 0; left:0px; top:0px;}
- 25% {border-top: 3px dotted white; opacity: 0; left:200px; top:0px;}
- 25%  {border-right:3px dotted white; opacity: .8; left:200px; top:0px;}
- /* 25%  {border-right:3px dotted white; opacity: .0; left:200px; top:0px;} */
- 25%  {border-bottom:3px dotted white; opacity: .8; left:200px; top:0px;}
- /* 25%  {border-bottom:3px dotted white; opacity: .0; left:200px; top:0px;} */
- 25%  {border-left:3px dotted white; opacity: .8; left:200px; top:0px;}
+ 25% {border-top: 2px dotted white; opacity: 0; left:200px; top:0px;}
+ 25%  {border-right:2px dotted white; opacity: .8; left:200px; top:0px;}
+ 25%  {border-right:2px dotted white; opacity: .0; left:200px; top:0px;}
+ 25%  {border-bottom:2px dotted white; opacity: .8; left:200px; top:0px;}
+ 25%  {border-bottom:2px dotted white; opacity: .0; left:200px; top:0px;}
+ 25%  {border-left:2px dotted white; opacity: .8; left:200px; top:0px;}
  50%  {opacity: .5;left:200px; top:150px;}
  75% {opacity: 1;left:0px; top:0px;} 
 }
@@ -131,3 +179,21 @@ h4{
  75% {font-size: 75px;  left:0px; top:0px;}
  100% {font-size: 85px;  left:0px; top:0px;}
 }
+@keyframes log{
+  0%   { font-size: 20px; left:0px; top:0px;}
+  25%  {font-size: 25px;  left:200px; top:0px;}
+
+}
+@keyframes sign{
+  0%   { font-size: 20px; left:0px; top:0px;}
+  25%  {font-size: 30px;  left:200px; top:0px;}
+  
+}
+@keyframes about{
+  0%   { font-size: 20px; left:0px; top:0px;}
+  25%  {font-size: 35px;  left:200px; top:0px;}
+  
+}
+
+
+

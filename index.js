@@ -30,3 +30,4 @@ app.use(passport.session());
 app.use(require("./routes/index.js"));
 
 app.listen(1108, () => console.log("server is running"));
+app.use(require("better-express-errors")(app))

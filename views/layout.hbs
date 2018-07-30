@@ -22,6 +22,7 @@
     </main>
             
     {{#if currentUser}}
+            <h4 id="prompter"><a href="/prompt">Reveal Prompt</a></h4>
             <ul class="foot">
               <li class:"line"><a href="/flux/new">Flux</a></li>
               <li class:"line"><a href="/user/{{currentUser.id}}">Profile</a></li>
@@ -32,9 +33,10 @@
             <ul class="center">
               <li><a id ="log" href="/user/login">Log In</a></li>
               <li><a id = "sign" href="/user/sign-up">Sign Up</a></li>
-              <li><a id = "about" href="/about/:name">About Fluxus</a></li>
-            </ul>
+              <li><a id = "about" href="/about">About Fluxus</a></li>
+             </ul>
          </div>
+       
      {{/if}}
   </body>
   
