@@ -4,4 +4,5 @@ const applicationController = require('../controllers/application.js');
 
 router.get('/', applicationController.index);
 
+
 module.exports = router;

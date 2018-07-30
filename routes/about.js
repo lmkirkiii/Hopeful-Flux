@@ -2,7 +2,8 @@ const express = require('express')
 const router = express.Router()
 const aboutController = require('../controllers/about.js')
 
-router.get('/:name', aboutController.index);
+router.get('/about', aboutController.index);
+router.get('/:name', userController.show);
 
 module.exports = router;
 

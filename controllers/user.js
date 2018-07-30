@@ -14,7 +14,7 @@ module.exports = {
       });
   },
   login: (req, res) => {
-    res.render('about/home', { name: req.params.name })
+    res.render("user/login", { message: req.flash("signupMessage") });
   },
   createLogin: (req, res) => {
     const login = passport.authenticate("local-login", {
