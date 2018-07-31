@@ -14,6 +14,7 @@ router.use('/mission', require('./mission'));
 router.use('/meaning', require('./meaning'));
 router.use('/dev', require('./dev'));
 router.use('/prompt', require('./prompt'));
+router.use('/add', require('./add'));
 
 router.all('*', (req, res) => {
   res.status(400).send();

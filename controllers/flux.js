@@ -29,18 +29,31 @@ module.exports = {
       });
     });
   },
+  // update: (req, res) => {
+  //   let { content } = req.body;
+  //   Flux.findOne({ _id: req.params.id }).then(flux => {
+  //     flux.comments.push({
+  //       content,
+  //       author: req.user._id
+  //     });
+  //     flux.save(err => {
+  //       res.redirect(`/flux/${flux._id}`);
+  //     });
+  //   });
+  // },
   update: (req, res) => {
-    let { content } = req.body;
-    Flux.findOne({ _id: req.params.id }).then(flux => {
-      flux.comments.push({
-        content,
-        author: req.user._id
+      let { content } = req.body;
+      Flux.findByIdAndUpdate({ _id: req.params.id }).then(flux => {
+        flux.comments.push({
+          content,
+          author: req.user._id
+        });
+        flux.save(err => {
+          res.redirect(`/flux/${flux._id}`);
+        });
       });
-      flux.save(err => {
-        res.redirect(`/flux/${flux._id}`);
-      });
-    });
-  },
+    },
+
   requireAuth: function(req, res, next) {
     if (req.isAuthenticated()) {
       next();

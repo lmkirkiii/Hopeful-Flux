@@ -8,15 +8,17 @@
     <a href="/user/{{ author.id }}" class="">{{ author.local.email }}</a>
     <span class="flux__date">{{ createdAt }}</span>
     <span class="flux_comments">{{ comments.length }} Comments</span>
-    <form method="POST" action="/flux/{{id}}?_method=DELETE" class="row">
-      <p class="input-field inline col s2">
-        <input class="btn" type="submit" value="Delete">
-      </p>
-    </form>
-    <form action="/flux/{{id}}?_method=PUT" method="POST" class="row">
-        <p class="input-field inline col s3"></p>
-          <input type="submit" value="Edit Flux" class="btn">
+    <div class="rows">
+      <form  action="/flux/{{id}}?_method=PUT" method="POST">
+          <p class="input-field"></p>
+            <input id="cols1" class="btn" type="submit" value="Edit Flux">
+          </p>
+      </form>
+      <form  method="POST" action="/flux/{{id}}?_method=DELETE">
+        <p  class="input-field">
+          <input id="cols" class="btn"  type="submit" value="Delete">
         </p>
-    </form>
+      </form>
+    </div>
   </div>
 </div>

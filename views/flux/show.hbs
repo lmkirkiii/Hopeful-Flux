@@ -2,7 +2,7 @@
   {{> 'flux'}}
 </p>
 
-{{!-- {{#if comments.length}}
+{{#if comments.length}}
   {{#each comments}}
     <div>
       <div>
@@ -21,7 +21,7 @@
 {{#if currentUser}}
 <div>
   <div>
-    <h4>Add a comment:</h6>
+    <h4>Edit flux:</h4>
     <form method="POST" action="/flux/{{id}}?_method=PUT" class="row">
       <p class="input-field inline col s10">
         <label for="content"></label>
@@ -33,4 +33,4 @@
     </form>
   </div>
 </div>
-{{/if }} --}}
+{{/if }}
