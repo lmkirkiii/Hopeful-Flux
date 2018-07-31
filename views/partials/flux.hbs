@@ -1,5 +1,5 @@
 <div class="lard">
-  <div >
+  <div>
     <a href="/flux/{{id}}">
       {{ content }}
     </a>
@@ -12,6 +12,11 @@
       <p class="input-field inline col s2">
         <input class="btn" type="submit" value="Delete">
       </p>
+    </form>
+    <form action="/flux/{{id}}?_method=PUT" method="POST" class="row">
+        <p class="input-field inline col s3"></p>
+          <input type="submit" value="Edit Flux" class="btn">
+        </p>
     </form>
   </div>
 </div>

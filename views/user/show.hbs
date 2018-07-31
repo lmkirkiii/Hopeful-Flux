@@ -1,12 +1,13 @@
 <section class="profile">
-  <h2>{{user.local.email}}</h2>
+  
   {{#if user.fluxus}}
+  <h2>{{user.local.email}}</h2>
     <div class="fluxus">
       {{#each user.fluxus}}
          {{> 'flux'}}
       {{/each}}
     </div>
   {{else}}
-    <p>No Flux yet</p>
+    <h4><em>Welcome {{user.local.email}} to response archive no responses yet.</em></h4>
   {{/if}}
 </section>

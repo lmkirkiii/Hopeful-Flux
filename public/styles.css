@@ -1,12 +1,16 @@
 .lard{
-  border-top: 2px dotted white;
- border-right: 2px dotted white;
+
  padding: 30px;
  color: white;
  padding-bottom: 10px;
+ font-size: 30px;
 }
-.abt{
-  
+.lard a{
+  color: white;
+}
+h2{
+  color: white;
+  font-size: 45px;
 }
 
 
