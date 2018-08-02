@@ -16,6 +16,8 @@ router.use('/dev', require('./dev'));
 router.use('/prompt', require('./prompt'));
 router.use('/add', require('./add'));
 router.use('/update', require('./update'));
+router.use('/delete', require('./delete'));
+
 
 router.all('*', (req, res) => {
   res.status(400).send();

@@ -21,12 +21,14 @@
     </main>
             
     {{#if currentUser}}
+            {{!-- <img id="splotch" src="img/splotch.png"> --}}
             
             <ul class="foot">
               <li class:"line"><a href="/prompt">Random Flux</a></h4>
               <li class:"line"><a href="/add">Add Flux</a></h4>
-              <li class:"line"><a href="/new">Update Flux</a></li>
+              <li class:"line"><a href="/update">Update Flux</a></li>
               <li class:"line"><a href="/user/{{currentUser.id}}">Profile</a></li>
+              <li class:"line"><a href="/delete">Delete Flux</a></li>
               <li class:"line"><a href="/user/logout">Log Out</a></li>
             </ul>
     {{else}}

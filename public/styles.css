@@ -1,57 +1,62 @@
-.lard{
-
- padding: 30px;
- color: white;
- padding-bottom: 10px;
- font-size: 30px;
-}
-.lard a{
-  color: white;
-}
-h2{
-  color: white;
-  font-size: 45px;
-}
-.rows{
-  display: flex;
-  flex-direction: row;
-}
-#cols{
-  display: flex;
-  justify-content: space-evenly;
-
-}
-#cols1{
-  display: flex;
-  justify-content: space-evenly;
-
-}
-
 
 
 body{
   background-color: rgb(57, 57, 224);
   background-image: url("img/back2.jpg"); 
+  cursor: url("img/cursor-1.png"), auto;
 }
 
 
-
-#bi h1{
- color: blue;
- text-align: center;
- margin-top: 25px;
- text-align: center;
- position: relative;
- -webkit-animation-name: slide; 
- -webkit-animation-duration: 4s; 
- animation-name: slide;
- animation-duration: 4s;
- font-size: 85px;
- margin-left: 300px;
- margin-right: 300px;
- font-size: 85px;
+h2{
+  color: white;
+  font-size: 45px;
+}
+form{
+  padding: 30px;
+  color: white;
+  padding-bottom: 10px;
+ }
+ h4{
+  color: white;
+  font-size: 40px
+ }
+ 
+form{
+  padding: 30px;
+  color: white;
+  padding-bottom: 10px;
+  cursor: url("img/cursorA-2.png"), auto;
+ }
+ h4{
+  color: white;
+  font-size: 40px
+ }
+ a{
+  color: white;
+  cursor: url("img/cursorA-2.png"), auto;
+}
+a:hover{
+  cursor: url("img/cursorA-2.png"), auto;
+  opacity: .6;
+}
+input{
+  border-bottom: 2px dotted;
+  cursor: url("img/cursorA-2.png"), auto;
+}
+input:hover{
+  cursor: url("img/cursorA-2.png"), auto; opacity: .9;
+  opacity: .6;
 }
 
+
+.rows{
+  display: flex;
+  flex-direction: row;
+}
+.container{
+  animation: fadein 10s;
+ }
+ 
 
 .center{
  position: relative;
@@ -81,10 +86,47 @@ body{
  width: 100%;
  font-size: 20px;
 }
+.line{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  color: white;
+  font-size: 20px;
+ }
+
+.lard{
+
+  padding: 30px;
+  color: white;
+  padding-bottom: 10px;
+  font-size: 30px;
+ }
+ .lard a{
+   color: white;
+ }
+.aboutContainer{
+  margin: 200px;
+}
 #about1{
   font-size: 40px;
   color: white;
 }
+#bi h1{
+  color: blue;
+  text-align: center;
+  margin-top: 25px;
+  text-align: center;
+  position: relative;
+  -webkit-animation-name: slide; 
+  -webkit-animation-duration: 4s; 
+  animation-name: slide;
+  animation-duration: 4s;
+  font-size: 85px;
+  margin-left: 300px;
+  margin-right: 300px;
+  font-size: 85px;
+ }
+ 
 #log{
 
  text-align: center;
@@ -101,8 +143,15 @@ body{
  animation: sign;
  animation-duration: 7s;
 }
-.aboutContainer{
-  margin: 200px;
+#cols{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+#cols1{
+  display: flex;
+  justify-content: space-evenly;
+
 }
 #mission{
   font-size: 20px;
@@ -128,6 +177,14 @@ body{
   animation: slide;
   animation-duration: 4s;
 }
+#splotch{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  animation: fadein; 
+  animation-duration: 5s;
+}
 #about{
 text-align: center;
  color: white;
@@ -135,28 +192,11 @@ text-align: center;
  animation: about;
  animation-duration: 7s;
 }
-a{
-  color: white;
-}
-.line{
- display: flex;
- justify-content: space-evenly;
- flex-direction: row;
- color: white;
- font-size: 20px;
-}
 
 #better{
  padding: 100px;
 }
 
-.container{
- animation: fadein 10s;
-}
-input{
-  border-bottom: 2px dotted;
- 
-}
 #signup-btn{
   background:none; 
   border: 1px dotted white;
@@ -164,15 +204,6 @@ input{
 #login-btn{
   background:none; 
   border: 1px dotted white;
-}
-form{
- padding: 30px;
- color: white;
- padding-bottom: 10px;
-}
-h4{
- color: white;
- font-size: 40px
 }
 
 @keyframes fadein {
