@@ -27,13 +27,13 @@ app.use(flash());
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(require("./routes/index.js"));
-app.set('port', process.env.PORT || 3001)
+// app.set('port', process.env.PORT || 3001)
 
-  app.listen(app.get('port'), () => {
-    console.log(`✅ PORT: ${app.get('port')} 🌟`)
-  })
+//   app.listen(app.get('port'), () => {
+//     console.log(`✅ PORT: ${app.get('port')} 🌟`)
+//   })
 
 
 
-app.listen(1108, () => console.log("server is running"));
-app.use(require("better-express-errors")(app))
+app.listen(1108, () => console.log("server is running on birth"));
+// app.use(require("better-express-errors")(app))

@@ -181,7 +181,6 @@ input:hover{
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
   animation: fadein; 
   animation-duration: 5s;
 }
