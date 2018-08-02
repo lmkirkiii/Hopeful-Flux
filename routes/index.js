@@ -16,6 +16,7 @@ router.use('/dev', require('./dev'));
 router.use('/prompt', require('./prompt'));
 router.use('/add', require('./add'));
 router.use('/update', require('./update'));
+router.use('/fluxer', require('./fluxer'));
 router.use('/delete', require('./delete'));
 
 
