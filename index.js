@@ -35,6 +35,3 @@ app.set('port', process.env.PORT || 1108)
   })
 
 
-
-// app.listen(1108, () => console.log("server is running on birth"));
-// app.use(require("better-express-errors")(app))
