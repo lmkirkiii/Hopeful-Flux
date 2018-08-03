@@ -2,6 +2,6 @@
 module.exports = {
 
     show: (req, res) => {
-     res.render("dev/home");
+     res.render("about/dev/home");
     }
   };

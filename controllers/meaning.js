@@ -1,6 +1,6 @@
 
 module.exports = {
     show: (req, res) => {
-     res.render("meaning/home");
+     res.render("about/meaning/home");
     }
   };

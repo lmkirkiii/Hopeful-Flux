@@ -1,5 +1,4 @@
 const User = require("../models/User");
-const { Flux } = require("../models/Flux");
 const passport = require("passport");
 
 module.exports = {
